@@ -1,50 +1,33 @@
 <?php
-// "https://s3-eu-west-1.amazonaws.com/coding-task-espejos/stores.xml"
-$number_of_params = sizeof($argv);
-$options = [
-    "--check-file" => "needs a valid .xml file", 
-    "--generate-report" => "needs a name for the report file", 
-    "--write-toDb" => "needs a db name", 
-    "--help" => ""
+$source_file = "stores.xml";
+$xml = simplexml_load_file($source_file);
+$fields_required = [
+    "number",
+    "name",
+    "address",
+    "siteid",
+    "lat",
+    "lon",
+    "cfs_flag"
 ];
-
-if ($number_of_params === 3){
-    $option = $argv[1];
-    $value = $argv[2];
-    if($option === "--check-file"){
-        checkIfFileExists($value);
-    }else if($option === "--generate-report"){
-        runReport($value);
-    }else if($option === "--write-toDb"){
-        print_r($value);
-    }else if($option === "--help"){
-        print_r($value);
-    }else{
-        print_r("options available are:");
-    }
+foreach($xml as $store){
+    foreach($store->children() as $field => $value){
+        if(in_array($field, $fields_required)){
+            if($store->$field->children()->count() >= 1){
+                echo $field.":\n";
+                foreach($store->$field->children() as $childField => $childValue){
+                    echo "\t".$childField.": ".$childValue."\n";
+                }
+            }else{
+                echo $field.": ".$value."\n";
+            }
+        }else{
+            foreach($store->$field->children() as $subField => $subValue){
+                if(in_array($subField, $fields_required)){
+                    echo $subField.": ".$subValue."\n";
+                }              
+            }
+        }
+    }   
 }
-else{
-    showHelp($options);
-}
-
-function runReport($file){
-    checkIfFileExists($file);
-    print_r("parsing..");
-}
-
-function checkIfFileExists($file){
-    $xml_file=simplexml_load_file($file) or die("Error: Cannot not get source file.\n");
-    print_r("File exists.\n");
-}
-
-function showHelp($options){
-    print_r("OPTIONS AVAILABLE:\n\n");
-    foreach($options as $option => $value){
-        print_r("option: ".$option."\t".$value."\n");
-    }
-}
-
 ?>
-
-
-
