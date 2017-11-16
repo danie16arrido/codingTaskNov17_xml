@@ -13,7 +13,10 @@ if ($number_of_params === 3){
     $value = $argv[2];
     if($option === "--check-file"){
         checkIfFileExists($value);
-    }else if($option === "--generate-report"){
+    }if($option === "--parse"){
+        parse($value);
+    }
+    else if($option === "--generate-report"){
         runReport($value);
     }else if($option === "--write-toDb"){
         print_r($value);
@@ -30,6 +33,7 @@ else{
 function runReport($file){
     checkIfFileExists($file);
     print_r("parsing..");
+    
 }
 
 function checkIfFileExists($file){
