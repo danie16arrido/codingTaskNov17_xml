@@ -23,6 +23,12 @@ $validatorValues = [
     "number" => "/^[0-9]{2,3}$/",
     "name" => "/^[a-z\d\-_\s]+$/i",
     "siteid" => "/^[A-Z]{2}$/",
+    "address_line_1" => "/^[a-z\d\-_\s]+$/i",
+    "address_line_2" => "/^[a-z\d\-_\s]+$/i",
+    "address_line_3" => "/^[a-z\d\-_\s]+$/i",
+    "city" => "/^[a-z\d\-_\s]+$/i",
+    "county" => "/^[a-z\d\-_\s]+$/i",
+    "country" => "/^[a-z\d\-_\s]+$/i",
     "lat" => "/^[+\-]?[0-9]{1,3}\.[0-9]{3,}\z/",
     "lon" => "/^[+\-]?[0-9]{1,3}\.[0-9]{3,}\z/",
     "phone_number" => "/^[0-9 ]+$/",
@@ -31,7 +37,7 @@ $validatorValues = [
 ];
 $myValidator->setValidators($validatorValues);
 $myValidator->validateData($stores);
- echo $myValidator->getDestinationFile();
+//  echo $myValidator->getDestinationFile();
 // $loader = new dbloader;
 // $loader->setConnectioData(db, user, password);
 // $myfile =  $myValidator->getDestinationFile();

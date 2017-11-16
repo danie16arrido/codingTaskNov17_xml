@@ -40,6 +40,9 @@ class validator{
         if($value === ""){
             return array("result" => false, "value" => ["data" => $value, "error_type"=>"empty"]);
         }
+        if(null === $value){
+            return array("result" => false, "value" => ["data" => null, "error_type"=> null]);
+        }
         if(!preg_match($this->validators[$regex_name], $value)){
             return array("result" => false, "value" =>  ["data" => $value, "error_type" => "not_valid"]);
         }else{
@@ -53,15 +56,19 @@ class validator{
         //loop through data
         foreach($data as $item){
             $tmp = [];
-            foreach($this->validators as $field => $reg_ex){
-                $isFieldValid = $this->validate($item[$field], $field);
-                if(!$isFieldValid["result"]){
-                    //send to logger
-                    $error_logger[$item["number"]][$field] = $isFieldValid["value"];
+            foreach($this->validators as $field => $reg_ex){             
+                if(!array_key_exists($field, $item)){
+                    $error_logger[$item["number"]][$field] = array("data" => null, "error_type"=> "field_missing");
                 }else{
-                    //send to dB
-                    $tmp[$field] = $item[$field];
-                }
+                    $isFieldValid = $this->validate($item[$field], $field);
+                    if(!$isFieldValid["result"]){
+                        //send to logger
+                        $error_logger[$item["number"]][$field] = $isFieldValid["value"];
+                    }else{
+                        //send to dB
+                        $tmp[$field] = $item[$field];
+                    }
+                }    
             }
             array_push($toDb, $tmp);
         }
