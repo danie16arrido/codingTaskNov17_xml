@@ -20,7 +20,8 @@ function getStoresData($xml_file, $fields_required){
             if(in_array($field, $fields_required)){       
                 if($store->$field->children()->count() > 1){
                     foreach($store->$field->children() as $childField => $childValue){
-                        $trimmed_store[$field][$childField] = $childValue->__toString();
+                        // $trimmed_store[$field][$childField] = $childValue->__toString();
+                        $trimmed_store[$childField] = $childValue->__toString();    
                     }
                 }else{
                     $trimmed_store[$field] = $value->__toString();
@@ -38,14 +39,32 @@ function getStoresData($xml_file, $fields_required){
     }  
     return $trimmed_stores;
 }
+// foreach( getStoresData($xml_file, $fields_required) as $a){
+//     print_r($a);
+// }
 
-saveDataToFile($destination_file, getStoresData($xml_file, $fields_required));
+// saveDataToFile($destination_file, getStoresData($xml_file, $fields_required));
 
 function saveDataToFile($file_name, $source){
     $jsonData = json_encode($source, JSON_PRETTY_PRINT);
     file_put_contents($file_name, $jsonData);
 }
 
+function validateData($dataArray, $validators){
+ 
+}
 
-
+$validator = isFieldValid("815","/^[0-9]{3}$/");
+if($validator["result"]){
+    echo "cool";
+}else{
+    echo "not not".$validator["value"];
+}
+function isFieldValid($value, $regex){
+    if(!preg_match($regex, $value)){
+        return array("result" => false, "value" =>$value);
+    }else{
+        return array("result" => true);
+    }
+}
 ?>
