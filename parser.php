@@ -2,18 +2,16 @@
 
 class XmlParser{
     private $source_file;
-    private $destination_file;
     private $fields_required;
 
-    public function XmlParser($source_file = "", $destination_file = "xmlToJson.json"){
+    public function XmlParser($source_file = ""){
         $this->source_file = $source_file;
-        $this->destination_file = $destination_file;
         $this->fields_required = array();
     }
     
     public function setSourceFile($file_name){
         $this->source_file = $file_name;
-        // return $this;
+        return $this;
     }
 
     public function getSourceFileName(){
@@ -57,20 +55,10 @@ class XmlParser{
         return $trimmed_stores;
     }
 
-    private function saveDataToFile($file_name, $source){
-        $jsonData = json_encode($source, JSON_PRETTY_PRINT);
-        file_put_contents($file_name, $jsonData);
-    }
-
-    private function addTimestampToDestinationFile(){
-        $this->destination_file = date('d_m_Y_His A e').$this->destination_file;
-    }
-
-    public function parseData(){
-        echo "parsing";
+    public function parseData($data_source){
+        $this->setSourceFile($data_source);
         $xml_file = simplexml_load_file($this->source_file);
-        $this->addTimestampToDestinationFile();
-        $this->saveDataToFile($this->destination_file, $this->getStoresData($xml_file, $this->fields_required));
+        return $this->getStoresData($xml_file, $this->fields_required);
     }
 }
 
