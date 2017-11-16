@@ -62,11 +62,14 @@ class XmlParser{
         file_put_contents($file_name, $jsonData);
     }
 
+    private function addTimestampToDestinationFile(){
+        $this->destination_file = date('d_m_Y_His A e').$this->destination_file;
+    }
+
     public function parseData(){
         echo "parsing";
         $xml_file = simplexml_load_file($this->source_file);
-        //append timestamp to destination file name
-        $this->destination_file = date('d_m_Y_His A e').$this->destination_file;
+        $this->addTimestampToDestinationFile();
         $this->saveDataToFile($this->destination_file, $this->getStoresData($xml_file, $this->fields_required));
     }
 }
