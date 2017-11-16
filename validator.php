@@ -5,8 +5,26 @@ class validator{
     private $destination_file;
 
     public function validator(){
-        $this->logger_file = "err.json";
-        $this->destination_file = "todb.json";
+        $this->setLoggerFile("err.json");
+        $this->setDestinationFile("todb.json");
+    }
+
+    public function setDestinationFile($file){
+        $this->destination_file = $file;
+        return $this;
+    }
+
+    public function getDestinationFile(){
+        return $this->destination_file;
+    }
+
+    public function setLoggerFile($file){
+        $this->logger_file = $file;
+        return $this;
+    }
+
+    public function getLoggerFile(){
+        return $this->logger_file;
     }
 
     public function setValidators($validators_in){
@@ -47,18 +65,29 @@ class validator{
             }
             array_push($toDb, $tmp);
         }
-        $this->logDataTo($this->logger_file, $error_logger);
-        $this->logDataTo($this->destination_file, $toDb);
+        $this->logDataTo("logger", $error_logger);
+        $this->logDataTo("todb", $toDb);
     }
 
-    private function logDataTo($file, $data){
+    private function logDataTo($option, $data){
         $jsonData = json_encode($data, JSON_PRETTY_PRINT);
-        $file = $this->addTimestampToFile($file);
-        file_put_contents($file, $jsonData);
+        switch ($option){
+            case "logger":
+                $this->setLoggerFile($this->addTimestampToFile($this->logger_file));
+                file_put_contents($this->logger_file, $jsonData);
+                break;
+            case "todb":
+                $this->setDestinationFile($this->addTimestampToFile($this->destination_file));
+                file_put_contents($this->destination_file, $jsonData);
+                break;    
+            default:
+                echo "not a valid selection";
+        }
     }
 
     private function addTimestampToFile($file){
-        return date('d_m_Y_His')."__".$file;
+        $result = date('d_m_Y_His')."__".$file;
+        return $result;
     }
 }
 

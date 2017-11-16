@@ -1,6 +1,7 @@
 <?php
 include "parser.php";
 include "validator.php";
+// include "dbloader.php";
 
 $myFile = "stores.xml";
 $myParser = new XmlParser;
@@ -30,6 +31,11 @@ $validatorValues = [
 ];
 $myValidator->setValidators($validatorValues);
 $myValidator->validateData($stores);
+ echo $myValidator->getDestinationFile();
+// $loader = new dbloader;
+// $loader->setConnectioData(db, user, password);
+// $myfile =  $myValidator->getDestinationFile();
+// $loader->loadToDB($myfile);
 
 
 

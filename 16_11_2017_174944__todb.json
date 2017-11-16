@@ -1,0 +1,2018 @@
+[
+    {
+        "number": "214",
+        "name": "Dublin - Tallaght",
+        "siteid": "IE",
+        "lat": "53.286706",
+        "lon": "-6.371848",
+        "phone_number": "01 4685783",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "225",
+        "name": "Salisbury",
+        "siteid": "GB",
+        "lat": "51.070060",
+        "lon": "-1.795280",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "182",
+        "name": "Farnborough",
+        "siteid": "GB",
+        "lat": "51.291750",
+        "lon": "-0.754370",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "206",
+        "name": "Eltham",
+        "siteid": "GB",
+        "lat": "51.450940",
+        "lon": "0.055400",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "137",
+        "name": "Great Yarmouth",
+        "siteid": "GB",
+        "lat": "52.608460",
+        "lon": "1.728010",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "72",
+        "name": "Chatham",
+        "siteid": "GB",
+        "lat": "51.381350",
+        "lon": "0.527110",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "102",
+        "name": "Bedford",
+        "siteid": "GB",
+        "lat": "52.136900",
+        "lon": "-0.466730",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "140",
+        "name": "Southsea",
+        "siteid": "GB",
+        "lat": "50.785270",
+        "lon": "-1.089350",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "64",
+        "name": "Birmingham Fort - Desire",
+        "siteid": "GB",
+        "lat": "52.508730",
+        "lon": "-1.823690",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "101",
+        "name": "Silverburn",
+        "siteid": "GB",
+        "lat": "55.823200",
+        "lon": "-4.342840",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "230",
+        "name": "Mansfield",
+        "siteid": "GB",
+        "lat": "53.145250",
+        "lon": "-1.198850",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "241",
+        "name": "Nuneaton",
+        "siteid": "GB",
+        "lat": "52.523130",
+        "lon": "-1.465880",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "158",
+        "name": "Winchester",
+        "siteid": "GB",
+        "lat": "51.062840",
+        "lon": "-1.315870",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "251",
+        "name": "Walsall",
+        "siteid": "GB",
+        "lat": "52.583780",
+        "lon": "-1.979840",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "65",
+        "name": "Witney - Desire",
+        "siteid": "GB",
+        "lat": "51.786210",
+        "lon": "-1.486370",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "297",
+        "name": "Workington",
+        "siteid": "GB",
+        "lat": "54.643000",
+        "lon": "-3.544410",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "180",
+        "name": "Gravesend",
+        "siteid": "GB",
+        "lat": "51.442270",
+        "lon": "0.367800",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "266",
+        "name": "Kings Lynn",
+        "siteid": "GB",
+        "lat": "52.752620",
+        "lon": "0.396130",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "68",
+        "name": "Redditch",
+        "siteid": "GB",
+        "lat": "52.306060",
+        "lon": "-1.944140",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "265",
+        "name": "Colchester",
+        "siteid": "GB",
+        "lat": "51.889210",
+        "lon": "0.898340",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "124",
+        "name": "Folkestone",
+        "siteid": "GB",
+        "lat": "51.078860",
+        "lon": "1.178420",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "97",
+        "name": "Northampton",
+        "siteid": "GB",
+        "lat": "52.237990",
+        "lon": "-0.897790",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "41",
+        "name": "Oldham",
+        "siteid": "GB",
+        "lat": "53.541160",
+        "lon": "-2.115150",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "280",
+        "name": "Stockport",
+        "siteid": "GB",
+        "lat": "53.412400",
+        "lon": "-2.159380",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "128",
+        "name": "Worcester",
+        "siteid": "GB",
+        "lat": "52.192280",
+        "lon": "-2.221420",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "260",
+        "name": "Ipswich",
+        "siteid": "GB",
+        "lat": "52.058730",
+        "lon": "1.152510",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "244",
+        "name": "Stratford",
+        "siteid": "GB",
+        "lat": "52.192420",
+        "lon": "-1.707090",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "291",
+        "name": "Middlesbrough",
+        "siteid": "GB",
+        "lat": "54.576640",
+        "lon": "-1.238100",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "262",
+        "name": "Norwich",
+        "siteid": "GB",
+        "lat": "52.626660",
+        "lon": "1.293830",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "82",
+        "name": "Portsmouth",
+        "siteid": "GB",
+        "lat": "50.799890",
+        "lon": "-1.090440",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "358",
+        "name": "Scarborough",
+        "siteid": "GB",
+        "lat": "54.280910",
+        "lon": "-0.402380",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "183",
+        "name": "Kidderminster",
+        "siteid": "GB",
+        "lat": "52.387100",
+        "lon": "-2.250470",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "395",
+        "name": "Lincoln",
+        "siteid": "GB",
+        "lat": "53.225460",
+        "lon": "-0.543870",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "129",
+        "name": "Derby",
+        "siteid": "GB",
+        "lat": "52.918100",
+        "lon": "-1.470680",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "160",
+        "name": "Bury St Edmunds",
+        "siteid": "GB",
+        "lat": "52.247340",
+        "lon": "0.709680",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "371",
+        "name": "Coventry",
+        "siteid": "GB",
+        "lat": "52.409530",
+        "lon": "-1.511840",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "263",
+        "name": "Chelmsford",
+        "siteid": "GB",
+        "lat": "51.733180",
+        "lon": "0.474870",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "228",
+        "name": "Doncaster",
+        "siteid": "GB",
+        "lat": "53.524070",
+        "lon": "-1.138600",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "136",
+        "name": "Bury",
+        "siteid": "GB",
+        "lat": "53.594520",
+        "lon": "-2.289360",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "801",
+        "name": "Philippines - Manila - ECC",
+        "siteid": "PH",
+        "lat": "14.575904",
+        "lon": "121.063022"
+    },
+    {
+        "number": "127",
+        "name": "Torquay",
+        "siteid": "GB",
+        "lat": "50.461480",
+        "lon": "-3.523790",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "261",
+        "name": "Romford",
+        "siteid": "GB",
+        "lat": "51.578950",
+        "lon": "0.182940",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "47",
+        "name": "Banbury",
+        "siteid": "GB",
+        "lat": "52.062480",
+        "lon": "-1.333220",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "235",
+        "name": "Swindon",
+        "siteid": "GB",
+        "lat": "51.561860",
+        "lon": "-1.784380",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "171",
+        "name": "Taunton",
+        "siteid": "GB",
+        "lat": "51.016770",
+        "lon": "-3.103810",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "79",
+        "name": "Truro - Desire",
+        "siteid": "GB",
+        "lat": "50.261840",
+        "lon": "-5.050320",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "143",
+        "name": "Worthing",
+        "siteid": "GB",
+        "lat": "50.810970",
+        "lon": "-0.369610",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "120",
+        "name": "Bournemouth",
+        "siteid": "GB",
+        "lat": "50.719910",
+        "lon": "-1.880750",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "200",
+        "name": "Exeter",
+        "siteid": "GB",
+        "lat": "50.723350",
+        "lon": "-3.527850",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "111",
+        "name": "Hull",
+        "siteid": "GB",
+        "lat": "53.747130",
+        "lon": "-0.344900",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "122",
+        "name": "Eastbourne",
+        "siteid": "GB",
+        "lat": "50.768150",
+        "lon": "0.287330",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "151",
+        "name": "Hastings",
+        "siteid": "GB",
+        "lat": "50.855170",
+        "lon": "0.579380",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "222",
+        "name": "Plymouth",
+        "siteid": "GB",
+        "lat": "50.371040",
+        "lon": "-4.140370",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "209",
+        "name": "Telford",
+        "siteid": "GB",
+        "lat": "52.675860",
+        "lon": "-2.445570",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "71",
+        "name": "Basildon",
+        "siteid": "GB",
+        "lat": "51.569660",
+        "lon": "0.459630",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "277",
+        "name": "Sheffield",
+        "siteid": "GB",
+        "lat": "53.377760",
+        "lon": "-1.472650",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "210",
+        "name": "Cambridge",
+        "siteid": "GB",
+        "lat": "52.206980",
+        "lon": "0.133300",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "359",
+        "name": "Leicester",
+        "siteid": "GB",
+        "lat": "52.637630",
+        "lon": "-1.134840",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "234",
+        "name": "Aberdeen",
+        "siteid": "GB",
+        "lat": "57.145800",
+        "lon": "-2.101490",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "290",
+        "name": "Stockton",
+        "siteid": "GB",
+        "lat": "54.566890",
+        "lon": "-1.313250",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "279",
+        "name": "Harrogate",
+        "siteid": "GB",
+        "lat": "53.993990",
+        "lon": "-1.542840",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "114",
+        "name": "York",
+        "siteid": "GB",
+        "lat": "53.959790",
+        "lon": "-1.083110",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "98",
+        "name": "Ashford",
+        "siteid": "GB",
+        "lat": "51.146860",
+        "lon": "0.870250",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "92",
+        "name": "Altrincham",
+        "siteid": "GB",
+        "lat": "53.387810",
+        "lon": "-2.349280",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "233",
+        "name": "Blackburn",
+        "siteid": "GB",
+        "lat": "53.747980",
+        "lon": "-2.483750",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "204",
+        "name": "Canterbury",
+        "siteid": "GB",
+        "lat": "51.279940",
+        "lon": "1.080310",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "216",
+        "name": "Warrington",
+        "siteid": "GB",
+        "lat": "53.389970",
+        "lon": "-2.595820",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "289",
+        "name": "Preston",
+        "siteid": "GB",
+        "lat": "53.756960",
+        "lon": "-2.705750",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "245",
+        "name": "Luton",
+        "siteid": "GB",
+        "lat": "51.878920",
+        "lon": "-0.413900",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "383",
+        "name": "Brighton",
+        "siteid": "GB",
+        "lat": "50.822510",
+        "lon": "-0.146100",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "152",
+        "name": "Newcastle",
+        "siteid": "GB",
+        "lat": "54.973815",
+        "lon": "-1.616057",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "108",
+        "name": "Nottingham",
+        "siteid": "GB",
+        "lat": "52.954080",
+        "lon": "-1.150820",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "55",
+        "name": "Hanley",
+        "siteid": "GB",
+        "lat": "53.027320",
+        "lon": "-2.175800",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "104",
+        "name": "Ayr",
+        "siteid": "GB",
+        "lat": "55.459860",
+        "lon": "-4.627140",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "42",
+        "name": "Crawley",
+        "siteid": "GB",
+        "lat": "51.113440",
+        "lon": "-0.183510",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "51",
+        "name": "Hemel Hempstead",
+        "siteid": "GB",
+        "lat": "51.747710",
+        "lon": "-0.473320",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "240",
+        "name": "Wigan",
+        "siteid": "GB",
+        "lat": "53.546400",
+        "lon": "-2.628830",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "164",
+        "name": "Guildford",
+        "siteid": "GB",
+        "lat": "51.234150",
+        "lon": "-0.575610",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "74",
+        "name": "Uxbridge",
+        "siteid": "GB",
+        "lat": "51.545910",
+        "lon": "-0.474010",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "392",
+        "name": "Bromley",
+        "siteid": "GB",
+        "lat": "51.403890",
+        "lon": "0.016610",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "135",
+        "name": "Wrexham",
+        "siteid": "GB",
+        "lat": "53.044960",
+        "lon": "-2.988270",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "107",
+        "name": "Bath",
+        "siteid": "GB",
+        "lat": "51.378350",
+        "lon": "-2.359790",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "59",
+        "name": "Merthyr Tydfil - Desire",
+        "siteid": "GB",
+        "lat": "51.750140",
+        "lon": "-3.392730",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "70",
+        "name": "Basingstoke",
+        "siteid": "GB",
+        "lat": "51.264470",
+        "lon": "-1.085490",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "78",
+        "name": "Orpington - Desire",
+        "siteid": "GB",
+        "lat": "51.392990",
+        "lon": "0.112070",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "376",
+        "name": "Merry Hill",
+        "siteid": "GB",
+        "lat": "52.482070",
+        "lon": "-2.110490",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "58",
+        "name": "Falkirk - Desire",
+        "siteid": "GB",
+        "lat": "55.998400",
+        "lon": "-3.786320",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "45",
+        "name": "Barrow",
+        "siteid": "GB",
+        "lat": "54.112930",
+        "lon": "-3.226210",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "284",
+        "name": "Perth",
+        "siteid": "GB",
+        "lat": "56.396310",
+        "lon": "-3.430280",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "115",
+        "name": "Chester - Browns of Chester",
+        "siteid": "GB",
+        "lat": "53.191240",
+        "lon": "-2.897380",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "87",
+        "name": "Southport",
+        "siteid": "GB",
+        "lat": "53.650980",
+        "lon": "-3.001670",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "89",
+        "name": "South Shields - Desire",
+        "siteid": "GB",
+        "lat": "54.997300",
+        "lon": "-1.434650",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "283",
+        "name": "Bolton",
+        "siteid": "GB",
+        "lat": "53.581680",
+        "lon": "-2.430040",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "220",
+        "name": "Gloucester",
+        "siteid": "GB",
+        "lat": "51.866274",
+        "lon": "-2.243952",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "83",
+        "name": "Slough",
+        "siteid": "GB",
+        "lat": "51.509110",
+        "lon": "-0.592270",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "271",
+        "name": "Southend",
+        "siteid": "GB",
+        "lat": "51.534690",
+        "lon": "0.715360",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "169",
+        "name": "Sunderland",
+        "siteid": "GB",
+        "lat": "54.905800",
+        "lon": "-1.384680",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "48",
+        "name": "Weymouth",
+        "siteid": "GB",
+        "lat": "50.610230",
+        "lon": "-2.455120",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "69",
+        "name": "Walton-on-Thames - Desire",
+        "siteid": "GB",
+        "lat": "51.385110",
+        "lon": "-0.420080",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "112",
+        "name": "Carmarthen",
+        "siteid": "GB",
+        "lat": "51.858420",
+        "lon": "-4.310890",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "142",
+        "name": "Carlisle",
+        "siteid": "GB",
+        "lat": "54.896390",
+        "lon": "-2.934860",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "187",
+        "name": "Bangor",
+        "siteid": "GB",
+        "lat": "53.228350",
+        "lon": "-4.125590",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "156",
+        "name": "Dunfermline",
+        "siteid": "GB",
+        "lat": "56.072390",
+        "lon": "-3.459580",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "205",
+        "name": "Staines",
+        "siteid": "GB",
+        "lat": "51.433140",
+        "lon": "-0.511900",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "223",
+        "name": "Blackpool",
+        "siteid": "GB",
+        "lat": "53.816480",
+        "lon": "-3.053950",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "224",
+        "name": "Bristol",
+        "siteid": "GB",
+        "lat": "51.458880",
+        "lon": "-2.590800",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "221",
+        "name": "Southampton",
+        "siteid": "GB",
+        "lat": "50.902070",
+        "lon": "-1.400020",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "85",
+        "name": "Sutton",
+        "siteid": "GB",
+        "lat": "51.365550",
+        "lon": "-0.194860",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "86",
+        "name": "Woking",
+        "siteid": "GB",
+        "lat": "51.319840",
+        "lon": "-0.561830",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "398",
+        "name": "Oxford",
+        "siteid": "GB",
+        "lat": "51.754330",
+        "lon": "-1.259550",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "252",
+        "name": "Swansea",
+        "siteid": "GB",
+        "lat": "51.617880",
+        "lon": "-3.945330",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "109",
+        "name": "Welwyn Garden City - Desire",
+        "siteid": "GB",
+        "lat": "51.802220",
+        "lon": "-0.204870",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "81",
+        "name": "Ilford",
+        "siteid": "GB",
+        "lat": "51.560330",
+        "lon": "0.071720",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "202",
+        "name": "Harrow",
+        "siteid": "GB",
+        "lat": "51.582390",
+        "lon": "-0.333160",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "259",
+        "name": "Hounslow",
+        "siteid": "GB",
+        "lat": "51.467964",
+        "lon": "-0.363364",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "173",
+        "name": "Leeds - Briggate",
+        "siteid": "GB",
+        "lat": "53.797590",
+        "lon": "-1.541770",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "80",
+        "name": "Clapham Junction",
+        "siteid": "GB",
+        "lat": "51.463180",
+        "lon": "-0.167130",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "354",
+        "name": "Wimbledon",
+        "siteid": "GB",
+        "lat": "51.421890",
+        "lon": "-0.204000",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "40",
+        "name": "Broadstairs - Westwood Cross",
+        "siteid": "GB",
+        "lat": "51.359900",
+        "lon": "1.393300",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "168",
+        "name": "Cardiff",
+        "siteid": "GB",
+        "lat": "51.480470",
+        "lon": "-3.174760",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "113",
+        "name": "Llanelli",
+        "siteid": "GB",
+        "lat": "51.677080",
+        "lon": "-4.139450",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "50",
+        "name": "York Monks Cross - Desire",
+        "siteid": "GB",
+        "lat": "53.988740",
+        "lon": "-1.045330",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "130",
+        "name": "Liverpool",
+        "siteid": "GB",
+        "lat": "53.405080",
+        "lon": "-2.988800",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "352",
+        "name": "Sheffield - Meadowhall",
+        "siteid": "GB",
+        "lat": "53.414880",
+        "lon": "-1.410120",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "219",
+        "name": "Croydon",
+        "siteid": "GB",
+        "lat": "51.374370",
+        "lon": "-0.101220",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "275",
+        "name": "Manchester",
+        "siteid": "GB",
+        "lat": "53.482250",
+        "lon": "-2.238620",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "66",
+        "name": "Milton Keynes",
+        "siteid": "GB",
+        "lat": "52.041160",
+        "lon": "-0.756470",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "125",
+        "name": "Llandudno",
+        "siteid": "GB",
+        "lat": "53.318490",
+        "lon": "-3.824060",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "393",
+        "name": "Reading",
+        "siteid": "GB",
+        "lat": "51.453640",
+        "lon": "-0.971300",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "53",
+        "name": "Birmingham",
+        "siteid": "GB",
+        "lat": "52.476830",
+        "lon": "-1.895360",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "52",
+        "name": "Gateshead - MetroCentre",
+        "siteid": "GB",
+        "lat": "54.957650",
+        "lon": "-1.668570",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "46",
+        "name": "Leeds - White Rose",
+        "siteid": "GB",
+        "lat": "53.758650",
+        "lon": "-1.574230",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "356",
+        "name": "Lakeside",
+        "siteid": "GB",
+        "lat": "51.487500",
+        "lon": "0.282530",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "231",
+        "name": "Stirling",
+        "siteid": "GB",
+        "lat": "56.117380",
+        "lon": "-3.935890",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "203",
+        "name": "Dundee",
+        "siteid": "GB",
+        "lat": "56.459080",
+        "lon": "-2.974580",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "172",
+        "name": "Inverness",
+        "siteid": "GB",
+        "lat": "57.479060",
+        "lon": "-4.220760",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "361",
+        "name": "East Kilbride",
+        "siteid": "GB",
+        "lat": "55.759870",
+        "lon": "-4.181980",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "162",
+        "name": "Livingston",
+        "siteid": "GB",
+        "lat": "55.883750",
+        "lon": "-3.514980",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "390",
+        "name": "Glasgow",
+        "siteid": "GB",
+        "lat": "55.857650",
+        "lon": "-4.252790",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "232",
+        "name": "Edinburgh",
+        "siteid": "GB",
+        "lat": "55.951680",
+        "lon": "-3.201050",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "227",
+        "name": "Galway",
+        "siteid": "IE",
+        "lat": "53.275440",
+        "lon": "-9.051080",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "88",
+        "name": "Leith",
+        "siteid": "GB",
+        "lat": "55.980270",
+        "lon": "-3.174530",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "211",
+        "name": "Dublin - Henry Street",
+        "siteid": "IE",
+        "lat": "53.349263",
+        "lon": "-6.264036",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "207",
+        "name": "Newbridge",
+        "siteid": "IE",
+        "lat": "53.177530",
+        "lon": "-6.797390",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "215",
+        "name": "Dublin - Blanchardstown",
+        "siteid": "IE",
+        "lat": "53.392382",
+        "lon": "-6.389580",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "38",
+        "name": "Cork - Mahon Point",
+        "siteid": "IE",
+        "lat": "51.897872",
+        "lon": "-8.471087",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "94",
+        "name": "Kirkcaldy - Desire",
+        "siteid": "GB",
+        "lat": "56.111100",
+        "lon": "-3.158700",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "218",
+        "name": "Limerick",
+        "siteid": "IE",
+        "lat": "52.663965",
+        "lon": "-8.626769",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "75",
+        "name": "London - Oxford Street",
+        "siteid": "GB",
+        "lat": "51.514980",
+        "lon": "-0.147780",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "145",
+        "name": "London - Westfield",
+        "siteid": "GB",
+        "lat": "51.507447",
+        "lon": "-0.220016",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "44",
+        "name": "Manchester - Trafford Centre",
+        "siteid": "GB",
+        "lat": "53.466190",
+        "lon": "-2.349000",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "226",
+        "name": "Waterford",
+        "siteid": "IE",
+        "lat": "52.259611",
+        "lon": "-7.110083",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "212",
+        "name": "Dublin - Blackrock",
+        "siteid": "IE",
+        "lat": "53.301197",
+        "lon": "-6.181419",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "217",
+        "name": "Cork - Patrick Street",
+        "siteid": "IE",
+        "lat": "51.898090",
+        "lon": "-8.470630",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "229",
+        "name": "Tralee",
+        "siteid": "IE",
+        "lat": "52.264132",
+        "lon": "-9.676788",
+        "phone_number": "1890 946 779",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "91",
+        "name": "Ballymena",
+        "siteid": "GB",
+        "lat": "54.869380",
+        "lon": "-6.274340",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "296",
+        "name": "Foyleside",
+        "siteid": "GB",
+        "lat": "54.996890",
+        "lon": "-7.319270",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "375",
+        "name": "Belfast",
+        "siteid": "GB",
+        "lat": "54.601120",
+        "lon": "-5.935550",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "35",
+        "name": "Newry",
+        "siteid": "GB",
+        "lat": "54.168200",
+        "lon": "-6.340800",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "99",
+        "name": "Rushmere",
+        "siteid": "GB",
+        "lat": "54.449900",
+        "lon": "-6.391170",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "63",
+        "name": "Fareham",
+        "siteid": "GB",
+        "lat": "50.852740",
+        "lon": "-1.175900",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "132",
+        "name": "Wakefield",
+        "siteid": "GB",
+        "lat": "53.686345",
+        "lon": "-1.472942",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "170",
+        "name": "Newbury Parkway",
+        "siteid": "GB",
+        "lat": "51.404990",
+        "lon": "-1.322906",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "972",
+        "name": "UAE - Abu Dhabi - Dalma Mall",
+        "siteid": "AE",
+        "lat": "24.333294",
+        "lon": "54.523988",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "N"
+    },
+    {
+        "number": "861",
+        "name": "Indonesia - Jakarta - Kemang Village",
+        "siteid": "ID",
+        "lat": "-6.263358",
+        "lon": "106.808631"
+    },
+    {
+        "number": "820",
+        "name": "Philippines - Manila - Shangri La",
+        "siteid": "PH",
+        "lat": "14.581050",
+        "lon": "121.054713"
+    },
+    {
+        "number": "931",
+        "name": "Russia - Moscow - Belaya Dacha",
+        "siteid": "RU",
+        "lat": "55.654244",
+        "lon": "37.844252"
+    },
+    {
+        "number": "174",
+        "name": "Dumfries",
+        "siteid": "GB",
+        "lat": "55.069114",
+        "lon": "-3.611468",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "281",
+        "name": "Chesterfield",
+        "siteid": "GB",
+        "lat": "53.232740",
+        "lon": "-1.428534",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "264",
+        "name": "Cheshire Oaks",
+        "siteid": "GB",
+        "lat": "53.265430",
+        "lon": "-2.886518",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "974",
+        "lat": "40.186808",
+        "lon": "44.518361"
+    },
+    {
+        "number": "857",
+        "name": "Saudi Arabia - Riyadh - Othaim",
+        "lat": "24.596612",
+        "lon": "46.635246"
+    },
+    {
+        "number": "954",
+        "name": "Pakistan- Karachi",
+        "lat": "24.802114",
+        "lon": "67.030656"
+    },
+    {
+        "number": "869",
+        "siteid": "PH",
+        "lat": "14.293163",
+        "lon": "121.101866"
+    },
+    {
+        "number": "856",
+        "siteid": "IR",
+        "lat": "29.632562",
+        "lon": "52.493663"
+    },
+    {
+        "number": "191",
+        "name": "Hereford",
+        "siteid": "GB",
+        "lat": "52.058192",
+        "lon": "-2.719213",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "836",
+        "name": "Latvia - Riga - Spice Mall",
+        "siteid": "LV",
+        "lat": "56.929771",
+        "lon": "24.036558"
+    },
+    {
+        "number": "918",
+        "siteid": "MY",
+        "lat": "3.146558",
+        "lon": "101.710997"
+    },
+    {
+        "number": "802",
+        "name": "Malta - Paola",
+        "siteid": "KS",
+        "lat": "35.872778",
+        "lon": "14.507500"
+    },
+    {
+        "number": "926",
+        "siteid": "BG",
+        "lat": "42.660010",
+        "lon": "23.298260"
+    },
+    {
+        "number": "243",
+        "name": "Lichfield",
+        "siteid": "GB",
+        "lat": "52.682834",
+        "lon": "-1.824078",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "853",
+        "name": "Kuwait - Airport",
+        "siteid": "KW",
+        "lat": "29.243600",
+        "lon": "47.971700"
+    },
+    {
+        "number": "811",
+        "name": "Cyprus - Engomi",
+        "siteid": "CY",
+        "lat": "35.163118",
+        "lon": "33.317269"
+    },
+    {
+        "number": "813",
+        "name": "Cyprus - Apollon",
+        "lat": "34.686366",
+        "lon": "33.031245"
+    },
+    {
+        "number": "814",
+        "name": "Cyprus - Central",
+        "siteid": "CY",
+        "lat": "35.165123",
+        "lon": "33.364208"
+    },
+    {
+        "number": "816",
+        "name": "Cyprus - Kinyras",
+        "siteid": "CY",
+        "lat": "34.757241",
+        "lon": "32.412444"
+    },
+    {
+        "number": "815",
+        "name": "Cyprus - Korivos",
+        "siteid": "CY",
+        "lat": "34.769248",
+        "lon": "32.441337"
+    },
+    {
+        "number": "810",
+        "name": "Cyprus - Mall of Cyprus",
+        "siteid": "CY",
+        "lat": "35.130261",
+        "lon": "33.370912"
+    },
+    {
+        "number": "818",
+        "name": "Cyprus - Olympia",
+        "siteid": "CY",
+        "lat": "34.689156",
+        "lon": "33.067690"
+    },
+    {
+        "number": "819",
+        "name": "Cyprus - Zenon",
+        "siteid": "CY",
+        "lat": "34.930396",
+        "lon": "33.622195"
+    },
+    {
+        "number": "833",
+        "name": "Saudi Arabia - Dammam",
+        "siteid": "SA",
+        "lat": "26.400332",
+        "lon": "50.117086"
+    },
+    {
+        "number": "867",
+        "name": "Bahrain - City Centre Mall",
+        "siteid": "BH",
+        "lat": "26.214900",
+        "lon": "50.587900"
+    },
+    {
+        "number": "966",
+        "name": "Egypt - Alexandria",
+        "lat": "31.167921",
+        "lon": "29.932723"
+    },
+    {
+        "number": "863",
+        "name": "Iceland - Reykjavik",
+        "lat": "64.111867",
+        "lon": "-21.907210"
+    },
+    {
+        "number": "821",
+        "name": "UAE - Abu Dhabi - Yas Island",
+        "siteid": "UA",
+        "lat": "24.479333",
+        "lon": "54.606127"
+    },
+    {
+        "number": "834",
+        "name": "Indonesia - Jakarta - Senayan City",
+        "siteid": "ID",
+        "lat": "-6.225204",
+        "lon": "99.999999"
+    },
+    {
+        "number": "969",
+        "name": "Iran - Mashhad - Ahmad abad",
+        "lat": "36.297038",
+        "lon": "59.573858"
+    },
+    {
+        "number": "967",
+        "name": "Iran - Tehran - Jame Jam",
+        "lat": "35.712031",
+        "lon": "51.406617"
+    },
+    {
+        "number": "955",
+        "name": "Iran - Tehran - Mirdamad",
+        "lat": "35.760280",
+        "lon": "52.426940"
+    },
+    {
+        "number": "886",
+        "name": "Jordan - Amman",
+        "siteid": "JO",
+        "lat": "31.956600",
+        "lon": "35.945700"
+    },
+    {
+        "number": "904",
+        "name": "Kuwait - Avenues",
+        "lat": "29.329400",
+        "lon": "48.003900"
+    },
+    {
+        "number": "898",
+        "name": "Kuwait - Souq Sharq",
+        "siteid": "KW",
+        "lat": "29.375500",
+        "lon": "47.967800"
+    },
+    {
+        "number": "868",
+        "name": "Malaysia - Kuala Lumpur - The Curve",
+        "siteid": "MY",
+        "lat": "3.157367",
+        "lon": "99.999999"
+    },
+    {
+        "number": "952",
+        "name": "Malta - Sliema",
+        "lat": "35.907753",
+        "lon": "14.511266"
+    },
+    {
+        "number": "884",
+        "name": "Philippines - Manila - RCC",
+        "siteid": "PH",
+        "lat": "14.559100",
+        "lon": "99.999999"
+    },
+    {
+        "number": "893",
+        "name": "Philippines - Manila - Trinoma",
+        "lat": "14.655008",
+        "lon": "99.999999"
+    },
+    {
+        "number": "944",
+        "siteid": "PH",
+        "lat": "7.098670",
+        "lon": "125.623980"
+    },
+    {
+        "number": "860",
+        "name": "Qatar - Doha",
+        "siteid": "QA",
+        "lat": "25.325815",
+        "lon": "51.530712"
+    },
+    {
+        "number": "177",
+        "name": "Rugby",
+        "siteid": "GB",
+        "lat": "52.388555",
+        "lon": "-1.257895",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "877",
+        "name": "Saudi Arabia - Jeddah - Ben Homran Centre",
+        "siteid": "SA",
+        "lat": "21.553100",
+        "lon": "39.164200"
+    },
+    {
+        "number": "844",
+        "name": "Saudi Arabia - Jeddah - Mall Of Arabia",
+        "siteid": "SA",
+        "lat": "21.543500",
+        "lon": "39.173000",
+        "phone_number": "00966595044699"
+    },
+    {
+        "number": "930",
+        "name": "Romania - Bucharest - Bucharesti Mall",
+        "siteid": "RO",
+        "lat": "44.420297",
+        "lon": "26.126269"
+    },
+    {
+        "number": "866",
+        "name": "Saudi Arabia - Medina",
+        "siteid": "SA",
+        "lat": "24.483712",
+        "lon": "39.582796"
+    },
+    {
+        "number": "879",
+        "name": "Saudi Arabia - Riyadh - Granada Mall",
+        "siteid": "SA",
+        "lat": "24.688000",
+        "lon": "46.722400"
+    },
+    {
+        "number": "880",
+        "name": "Saudi Arabia - Riyadh - Sahara Mall",
+        "siteid": "SA",
+        "lat": "24.688000",
+        "lon": "46.722400"
+    },
+    {
+        "number": "971",
+        "name": "Saudi Arabia - Riyadh Gallery",
+        "lat": "24.688000",
+        "lon": "46.722400"
+    },
+    {
+        "number": "846",
+        "name": "Turkey - Istanbul",
+        "lat": "41.063500",
+        "lon": "28.992700"
+    },
+    {
+        "number": "907",
+        "name": "UAE - Abu Dhabi",
+        "lat": "24.476400",
+        "lon": "54.370500"
+    },
+    {
+        "number": "903",
+        "name": "Libya - Tripoli",
+        "siteid": "LY",
+        "lat": "32.856097",
+        "lon": "13.079851"
+    },
+    {
+        "number": "804",
+        "name": "Estonia - Tallinn",
+        "siteid": "EE",
+        "lat": "59.426177",
+        "lon": "24.654436"
+    },
+    {
+        "number": "808",
+        "name": "Malaysia - Penang",
+        "siteid": "MY",
+        "lat": "5.434187",
+        "lon": "100.315132"
+    },
+    {
+        "number": "134",
+        "name": "Leamington Spa",
+        "siteid": "GB",
+        "lat": "52.278336",
+        "lon": "-1.548209",
+        "phone_number": "08445 616161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "32",
+        "name": "Haverfordwest",
+        "siteid": "GB",
+        "lat": "51.811629",
+        "lon": "-4.963885",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "803",
+        "name": "Saudi Arabia - Jeddah - Red Sea Mall",
+        "siteid": "SA",
+        "lat": "21.628568",
+        "lon": "39.111144"
+    },
+    {
+        "number": "894",
+        "name": "UAE - Dubai Mall",
+        "lat": "25.199600",
+        "lon": "55.277600",
+        "phone_number": "0097144190231"
+    },
+    {
+        "number": "889",
+        "name": "UAE - Dubai DCC",
+        "lat": "25.273100",
+        "lon": "55.304700",
+        "phone_number": "0097144190397"
+    },
+    {
+        "number": "891",
+        "name": "UAE - Dubai Mall Of Emirates",
+        "siteid": "AE",
+        "lat": "25.271100",
+        "lon": "55.307500",
+        "phone_number": "0097144190472"
+    },
+    {
+        "number": "838",
+        "name": "Kuwait - Gate Mall",
+        "siteid": "KW",
+        "lat": "29.174824",
+        "lon": "48.098063"
+    },
+    {
+        "number": "828",
+        "name": "Turkey - Mall Of Istanbul",
+        "siteid": "TR",
+        "lat": "41.063202",
+        "lon": "28.816400"
+    },
+    {
+        "number": "77",
+        "name": "Borehamwood",
+        "siteid": "GB",
+        "lat": "51.656771",
+        "lon": "-0.278364",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "36",
+        "name": "Scunthorpe",
+        "siteid": "GB",
+        "lat": "53.590614",
+        "lon": "-0.693853",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "859",
+        "name": "Egypt - Cairo - Festival City Mall",
+        "siteid": "EG",
+        "lat": "30.024256",
+        "lon": "31.406449"
+    },
+    {
+        "number": "843",
+        "name": "Russia - Moscow - Avia Park",
+        "siteid": "RU",
+        "lat": "55.790969",
+        "lon": "37.531114"
+    },
+    {
+        "number": "282",
+        "name": "Wandsworth",
+        "siteid": "GB",
+        "lat": "51.455368",
+        "lon": "-0.194126",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "841",
+        "name": "Iran - Isfahan",
+        "siteid": "IR",
+        "lat": "32.552420",
+        "lon": "51.687826"
+    },
+    {
+        "number": "131",
+        "name": "Beverley",
+        "siteid": "GB",
+        "lat": "53.838532",
+        "lon": "-0.421828",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "176",
+        "name": "Bradford",
+        "siteid": "GB",
+        "lat": "53.794415",
+        "lon": "-1.749882",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "267",
+        "name": "Newport",
+        "siteid": "GB",
+        "lat": "51.587248",
+        "lon": "-2.993940",
+        "phone_number": "0844 561 6161",
+        "cfs_flag": "Y"
+    },
+    {
+        "number": "940",
+        "name": "Romania - Bucharest - Plaza Mall",
+        "siteid": "RO",
+        "lat": "44.428022",
+        "lon": "26.032867"
+    },
+    {
+        "number": "325",
+        "name": "Head Office - Staff Only",
+        "siteid": "GB",
+        "lat": "51.526130",
+        "lon": "-0.139412",
+        "cfs_flag": "Y"
+    }
+]
