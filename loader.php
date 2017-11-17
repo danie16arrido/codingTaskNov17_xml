@@ -12,16 +12,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 echo "Connected successfully";
-$file = "17_11_2017_155636__todb.json";
+$file = "17_11_2017_165152__todb.json";
 $stores = json_decode(file_get_contents($file), true);
 
 
-foreach($stores as $store){
+foreach($stores as $key => $value){
 
-    if(hasField("country", $store)){
-        $tmp = "sql_"."country";
-        $sql = getquery("country", $store["country"]);
-    }
+    echo $key.":: ".$value."\n";
 
     // $sql = "INSERT INTO COUNTRIES (name) VALUES (".$items["country"].");";
     
