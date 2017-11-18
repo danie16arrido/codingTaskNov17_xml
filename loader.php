@@ -11,48 +11,87 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-echo "Connected successfully";
-$file = "17_11_2017_165152__todb.json";
+
+$file = "18_11_2017_121741__todb.json";
+
 $stores = json_decode(file_get_contents($file), true);
-
-
-foreach($stores as $key => $value){
-
-    echo $key.":: ".$value."\n";
-
-    // $sql = "INSERT INTO COUNTRIES (name) VALUES (".$items["country"].");";
+foreach($stores as $store){
     
+    foreach($store as $field => $value){
+        $country = false;
+        $city = false;
+        $address = false;
+        $store_number = false;
+        
+        if(array_key_exists("country", $store)){
+            $country = true;
+            $fields = ["name"];
+            $data = [$store["country"]];
+            $sql = generateQuery("countries", $fields, $data);
+            $sql1 = "select id from countries where name = '".$data[0]."';";
+            runQuery($sql, $conn);
+            $country_id = runQuery($sql1, $conn, "fetch");
+        }else{
+            
+        }
+        if(array_key_exists("city", $store)){
+            $city = true;
+            $fields = ["name", "country_id"];
+            $data = [$store["city"], $country_id];
+            if(!$country){
+                unset($fields["country_id"]);
+            }
+            $sql = generateQuery("cities", $fields, $data);
+            runQuery($sql, $conn);
+            $city_id = runQuery($sql, $conn, "fetch");
+        }else{
+            
+        }     
+    //create country query
+    //get country id
+    //create city query
+    //create address query
+    //create store query
+    }
+
+}
+mysqli_close($conn);
+
+function runQuery($sql, $conn, $fetch = false){
+    if ($result = mysqli_query($conn, $sql)) {
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "\n";
+    }
+    if($fetch){
+        $row = mysqli_fetch_array($result, MYSQLI_NUM);
+        return $row[0];
+    }
 }
 
-function hasField($value, $myArray){
-    return (array_key_exists($value, $myArray));
+function generateQuery($table, $fields, $values){
+    $base = "INSERT INTO ttt [] VALUES ();";
+    $columns = getCommaSeparatedValues($fields,"");
+    $data = getCommaSeparatedValues($values, "'");
+    $base = str_replace_json("ttt", $table, $base);
+    $base = str_replace_json("[]", $columns, $base);
+    $base = str_replace_json("()", $data, $base);
+
+    return $base;
 }
-// $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-// VALUES ('John', 'Doe', 'john@example.com')";
+function getCommaSeparatedValues($list, $charWrapper){
+    $result = "";
+    foreach($list as $item){
+        if($item[0] === "@"){
+            $result .= $item.", ";
+        }else{
+            $result .= $charWrapper.$item.$charWrapper.", ";
+        }
+    }
+    $result = rtrim($result, ', ');
+    return "(".$result.")";
+}
 
-// if (mysqli_query($conn, $sql)) {
-//     echo "New record created successfully";
-// } else {
-//     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-// }
-
-// mysqli_close($conn);
-
-
+function str_replace_json($search, $replace, $subject){ 
+    return json_decode(str_replace($search, $replace,  json_encode($subject))); 
+}
 ?>
-<!-- 
-{
-        "number": "214",
-        "name": "Dublin - Tallaght",
-        "siteid": "IE",
-        "address_line_1": "Debenhams Retail plc",
-        "address_line_2": "The Square",
-        "address_line_3": "Tallaght",
-        "city": "Dublin",
-        "county": "Dublin",
-        "country": "Republic of Ireland",
-        "lat": "53.286706",
-        "lon": "-6.371848",
-        "phone_number": "01 4685783",
-        "cfs_flag": "Y"
-    }, -->
