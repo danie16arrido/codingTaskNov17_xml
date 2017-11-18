@@ -1,11 +1,9 @@
 <?php
 include "parser.php";
 include "validator.php";
-// include "dbloader.php";
+// include "loader.php";
 
 $myFile = "stores.xml";
-$myParser = new XmlParser;
-
 $validatorValues = [
     "number" => "/^[0-9]{2,3}$/",
     "name" => "/\p{L}/",
@@ -22,6 +20,8 @@ $validatorValues = [
     // "phone_number1" => "/^[0-9]{4} [0-9]{3} [0-9]{3,4}$/",
     "cfs_flag" => "/^(?:Y|N|y|n)$/"
 ];
+
+$myParser = new XmlParser;
 $myParser->setFieldsRequired(array_keys($validatorValues));
 $stores = $myParser->parseData($myFile);
 
@@ -29,11 +29,11 @@ $myValidator = new validator;
 $myValidator->setValidators($validatorValues);
 $myValidator->validateData($stores);
 
-//  echo $myValidator->getDestinationFile();
 // $loader = new dbloader;
-// $loader->setConnectioData(db, user, password);
-// $myfile =  $myValidator->getDestinationFile();
-// $loader->loadToDB($myfile);
+// $loader->setConnectioData(server, db, user, password);
+// $loader->setDataFile($myValidator->getDestinationFile());
+// $loader->loadToDB();
+
 
 
 
