@@ -18,22 +18,24 @@ $stores = json_decode(file_get_contents($file), true);
 foreach($stores as $store){
     
     foreach($store as $field => $value){
+        
         $country = false;
         $city = false;
         $address = false;
         $store_number = false;
-        
+        //country
         if(array_key_exists("country", $store)){
             $country = true;
             $fields = ["name"];
             $data = [$store["country"]];
             $sql = generateQuery("countries", $fields, $data);
-            $sql1 = "select id from countries where name = '".$data[0]."';";
+            $sql1 = "select id from countries where name = '" . $store["country"] . "';";
             runQuery($sql, $conn);
             $country_id = runQuery($sql1, $conn, "fetch");
         }else{
             
         }
+        //city
         if(array_key_exists("city", $store)){
             $city = true;
             $fields = ["name", "country_id"];
@@ -42,11 +44,42 @@ foreach($stores as $store){
                 unset($fields["country_id"]);
             }
             $sql = generateQuery("cities", $fields, $data);
+            $sql1 = "select id from cities where name = '" . $store["city"] . "';";
             runQuery($sql, $conn);
-            $city_id = runQuery($sql, $conn, "fetch");
+            $city_id = runQuery($sql1, $conn, "fetch");
         }else{
             
-        }     
+        }
+        //address
+        $fields_ = ["address_line_1", "address_line_2", "address_line_3", "county", "lat", "lon"];
+        $fields = [];
+        foreach($fields_ as $field){
+            if (array_key_exists($field, $store)) {
+                $fields[$field] = $store[$field];
+            }else {
+                // unset($field, $fields);
+            }
+        }
+        $fields["city_id"] = $city_id;
+        $sql = generateQuery("addresses", array_keys($fields), array_values($fields));
+        runQuery($sql, $conn);
+        $address_id = $conn->insert_id;
+
+        // store
+        $fields_ = ["number", "siteid", "phone_number", "name"];
+        $fields = [];
+        foreach($fields_ as $field){
+            if(array_key_exists($field, $store)){
+                $fields[$field] = $store[$field];
+            }else{
+                // unset($field, $fields);
+            }
+        }
+        $fields["address_id"] = $address_id;
+        $sql = generateQuery("stores", array_keys($fields), array_values($fields));
+        runQuery($sql, $conn);
+        
+
     //create country query
     //get country id
     //create city query
