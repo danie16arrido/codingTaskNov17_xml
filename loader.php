@@ -4,6 +4,8 @@ $servername = "192.168.10.10";
 $username = "homestead";
 $password = "secret";
 $dbname = "nn4m";
+
+$file = "18_11_2017_121741__todb.json";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -12,17 +14,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$file = "18_11_2017_121741__todb.json";
+
 
 $stores = json_decode(file_get_contents($file), true);
 foreach($stores as $store){
     
     foreach($store as $field => $value){
-        
         $country = false;
-        $city = false;
-        $address = false;
-        $store_number = false;
         //country
         if(array_key_exists("country", $store)){
             $country = true;
@@ -37,7 +35,6 @@ foreach($stores as $store){
         }
         //city
         if(array_key_exists("city", $store)){
-            $city = true;
             $fields = ["name", "country_id"];
             $data = [$store["city"], $country_id];
             if(!$country){
