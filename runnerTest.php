@@ -1,7 +1,7 @@
 <?php
 include "parser.php";
 include "validator.php";
-// include "loader.php";
+include "loader.php";
 
 $myFile = "stores.xml";
 $validatorValues = [
@@ -29,10 +29,15 @@ $myValidator = new validator;
 $myValidator->setValidators($validatorValues);
 $myValidator->validateData($stores);
 
-// $loader = new dbloader;
-// $loader->setConnectioData(server, db, user, password);
-// $loader->setDataFile($myValidator->getDestinationFile());
-// $loader->loadToDB();
+
+$servername = "192.168.10.10";
+$username = "homestead";
+$password = "secret";
+$dbname = "nn4m";
+$myloader = new loader;
+$myloader->setConnectionData($servername, $dbname, $username, $password);
+$myloader->setDataFile($myValidator->getDestinationFile());
+$myloader->loadToDB();
 
 
 

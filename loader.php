@@ -31,73 +31,23 @@ class loader{
     public function loadToDb(){
         $conn = $this->connectToDb();
         $stores = $this->decodeSourceFile();
-        $this->loadToDb1($stores, $conn);
+        $this->preprocesQuery($stores, $conn);
         mysqli_close($conn);
     }
 
-    public function loadToDb1($stores, $conn){
+    public function preprocesQuery($stores, $conn){
         foreach ($stores as $store) {
             foreach ($store as $field => $value) {
             //country
-                // $fields_ = ["country" => "name"];
-                // $fields = [];
-                // foreach ($fields_ as $field => $db_field) {
-                //     if (array_key_exists($field, $store)) {
-                //         $fields[$fields_[$field]] = $store[$field];
-                //     } else {
-                //         $fields[$fields_[$field]] = $store[$fields_[$field]];
-                //     }
-                // }
-                // // $fields["country_id"] = $country_id;
-                // $sql = $this->generateQuery("countries", array_keys($fields), array_values($fields));
-                // $this->runQuery($sql, $conn);
-                // $country_id = $conn->insert_id;
                 $fields_ = ["country" => "name"];
                 $country_id = $this->runObjectQuery($store, "countries", $fields_, [], $conn);
             //city
-                // $fields_ = ["city"=> "name"];
-                // $fields = [];
-                // foreach ($fields_ as $field => $db_field) {
-                //     if (array_key_exists($field, $store)) {
-                //         $fields[$fields_[$field]] = $store[$field];
-                //     } else {
-                //         $fields[$fields_[$field]] = $store[$fields_[$field]];
-                //     }
-                // }
-                // $fields["country_id"] = $country_id;
-                // $sql = $this->generateQuery("cities", array_keys($fields), array_values($fields));
-                // $this->runQuery($sql, $conn);
                 $fields_ = ["city"=> "name"];
                 $city_id = $this->runObjectQuery($store, "cities", $fields_, ["country_id" => $country_id], $conn);
             //address
-                // $fields_ = ["address_line_1"=>"address_line_1", "address_line_2", "address_line_3", "county", "lat", "lon"];
-                // $fields = [];
-                // foreach ($fields_ as $field => $db_field) {
-                //     if (array_key_exists($field, $store)) {
-                //         $fields[$fields_[$field]] = $store[$field];
-                //     } else {
-                //         $fields[$fields_[$field]] = $store[$fields_[$field]];
-                //     }
-                // }
-                // $fields["city_id"] = $city_id;
-                // $sql = $this->generateQuery("addresses", array_keys($fields), array_values($fields));
-                // $this->runQuery($sql, $conn);
-                // $address_id = $conn->insert_id;
                 $fields_ = ["address_line_1" => "address_line_1", "address_line_2", "address_line_3", "county", "lat", "lon"];
                 $address_id = $this->runObjectQuery($store, "addresses", $fields_, ["city_id" => $city_id], $conn);
             // store
-                // $fields_ = ["number", "siteid", "phone_number", "name"];
-                // $fields = [];
-                // foreach ($fields_ as $field => $db_field) {
-                    //     if (array_key_exists($field, $store)) {
-                        //         $fields[$fields_[$field]] = $store[$field];
-                        //     } else {
-                            //         $fields[$fields_[$field]] = $store[$fields_[$field]];
-                            //     }
-                            // }
-                            // $fields["address_id"] = $address_id;
-                            // $sql = $this->generateQuery("stores", array_keys($fields), array_values($fields));
-                            // $this->runQuery($sql, $conn);
                 $fields_ = ["number", "siteid", "phone_number", "name"];
                 $this->runObjectQuery($store, "stores", $fields_, ["address_id" => $address_id], $conn);
             }
