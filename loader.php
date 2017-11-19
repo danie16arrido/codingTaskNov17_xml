@@ -48,7 +48,7 @@ class loader{
                 $fields_ = ["address_line_1" => "address_line_1", "address_line_2", "address_line_3", "county", "lat", "lon"];
                 $address_id = $this->runObjectQuery($store, "addresses", $fields_, ["city_id" => $city_id], $conn);
             // store
-                $fields_ = ["number"=>"id", "siteid", "phone_number", "name"];
+                $fields_ = ["number"=>"id", "siteid", "phone_number", "name", "cfs_flag"];
                 $this->runObjectQuery($store, "stores", $fields_, ["address_id" => $address_id], $conn);
             }
         }
@@ -115,6 +115,8 @@ class loader{
         $result = "";
         foreach ($list as $item) {
             if ($item[0] === "@") {
+                //trim @a 
+                $item = ltrim($item, '@');
                 $result .= $item . ", ";
             } else {
                 $result .= $charWrapper . $item . $charWrapper . ", ";
