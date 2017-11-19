@@ -48,7 +48,7 @@ class loader{
                 $fields_ = ["address_line_1" => "address_line_1", "address_line_2", "address_line_3", "county", "lat", "lon"];
                 $address_id = $this->runObjectQuery($store, "addresses", $fields_, ["city_id" => $city_id], $conn);
             // store
-                $fields_ = ["number", "siteid", "phone_number", "name"];
+                $fields_ = ["number"=>"id", "siteid", "phone_number", "name"];
                 $this->runObjectQuery($store, "stores", $fields_, ["address_id" => $address_id], $conn);
             }
         }
@@ -68,8 +68,18 @@ class loader{
         }
         $sql = $this->generateQuery($table, array_keys($fields), array_values($fields));
         $this->runQuery($sql, $conn);
+        $object_id = $conn->insert_id;
+        //timestamps
+        $sql_timestamps = $this->generateTimestampsQuery($table, $object_id);
+        $this->runQuery($sql_timestamps, $conn);
 
-        return $conn->insert_id;
+        return $object_id;
+    }
+
+    private function generateTimestampsQuery($table, $id){
+        $now = date('Y-m-d H:i:s');
+        $sql_timestamps = "UPDATE " .$table. " SET created_at='" .$now. "', updated_at='" .$now. "' WHERE id = " .$id. ";";
+        return $sql_timestamps;
     }
 
     private function decodeSourceFile(){
