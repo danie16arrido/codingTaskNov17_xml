@@ -2,6 +2,7 @@
 include "parser.php";
 include "validator.php";
 include "loader.php";
+include "transformer.php";
 
 $myFile = "stores.xml";
 $validatorValues = [
@@ -29,14 +30,20 @@ $myValidator = new validator;
 $myValidator->setValidators($validatorValues);
 $myValidator->validateData($stores);
 
+$myTransformer = new transformer;
+$myTransformer->setSource($myValidator->getDestinationFile());
+$myTransformer->setTransformers(['cfs_flag' => 'boolean']);
+$myTransformer->transformData();
 
 $servername = "192.168.10.10";
 $username = "homestead";
 $password = "secret";
 $dbname = "nn4m";
+
 $myloader = new loader;
 $myloader->setConnectionData($servername, $dbname, $username, $password);
-$myloader->setDataFile($myValidator->getDestinationFile());
+$myloader->setDataFile($myTransformer->getTransformedFile());
+// $myloader->setDataFile($myValidator->getDestinationFile());
 $myloader->loadToDB();
 
 

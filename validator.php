@@ -64,6 +64,7 @@ class validator{
                     if(!$isFieldValid["result"]){
                         //send to logger
                         $error_logger[$item["number"]][$field] = $isFieldValid["value"];
+                        $tmp[$field] = null;
                     }else{
                         //send to dB
                         $tmp[$field] = $item[$field];

@@ -35,7 +35,6 @@ class XmlParser{
                 if(in_array($field, $fields_required)){
                     if($store->$field->children()->count() > 1){
                         foreach($store->$field->children() as $childField => $childValue){
-                            // $trimmed_store[$field][$childField] = $childValue->__toString();
                             $trimmed_store[$childField] = $childValue->__toString();
                         }
                     }else{

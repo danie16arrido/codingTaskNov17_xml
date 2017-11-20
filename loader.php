@@ -38,7 +38,7 @@ class loader{
     public function preprocesQuery($stores, $conn){
         foreach ($stores as $store) {
             foreach ($store as $field => $value) {
-            //country
+            // country
                 $fields_ = ["country" => "name"];
                 $country_id = $this->runObjectQuery($store, "countries", $fields_, [], $conn);
             //city
@@ -48,8 +48,9 @@ class loader{
                 $fields_ = ["address_line_1" => "address_line_1", "address_line_2", "address_line_3", "county", "lat", "lon"];
                 $address_id = $this->runObjectQuery($store, "addresses", $fields_, ["city_id" => $city_id], $conn);
             // store
-                $fields_ = ["number"=>"id", "siteid", "phone_number", "name", "cfs_flag"];
-                $this->runObjectQuery($store, "stores", $fields_, ["address_id" => $address_id], $conn);
+                $fields_ = ["number" => 'id', "siteid", "phone_number", "name", "cfs_flag"];
+                $this->runObjectQuery($store, "stores", $fields_, ['address_id' => $address_id], $conn);
+
             }
         }
     }
@@ -67,8 +68,9 @@ class loader{
             $fields[$key] = $value;
         }
         $sql = $this->generateQuery($table, array_keys($fields), array_values($fields));
-        $this->runQuery($sql, $conn);
+        $id = $this->runQuery($sql, $conn);
         $object_id = $conn->insert_id;
+        // if($table =="stores"){echo "oid: ".$object_id."\n";}
         //timestamps
         $sql_timestamps = $this->generateTimestampsQuery($table, $object_id);
         $this->runQuery($sql_timestamps, $conn);
@@ -79,6 +81,7 @@ class loader{
     private function generateTimestampsQuery($table, $id){
         $now = date('Y-m-d H:i:s');
         $sql_timestamps = "UPDATE " .$table. " SET created_at='" .$now. "', updated_at='" .$now. "' WHERE id = " .$id. ";";
+        echo $sql_timestamps."\n";
         return $sql_timestamps;
     }
 

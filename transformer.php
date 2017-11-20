@@ -50,8 +50,9 @@ class transformer{
             case "boolean":
                 if (preg_match("/^(?:Y|y)$/", $data)) {
                     return "@true";
-                }
-                if (preg_match("/^(?:N|n)$/", $data)) {
+                }else if (preg_match("/^(?:N|n)$/", $data)) {
+                    return "@false";
+                }else{
                     return "@false";
                 }
                 break;
