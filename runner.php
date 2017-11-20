@@ -1,54 +1,54 @@
 <?php
-// "https://s3-eu-west-1.amazonaws.com/coding-task-espejos/stores.xml"
-$number_of_params = sizeof($argv);
-$options = [
-    "--check-file" => "needs a valid .xml file", 
-    "--generate-report" => "needs a name for the report file", 
-    "--write-toDb" => "needs a db name", 
-    "--help" => ""
+include "parser.php";
+include "validator.php";
+include "loader.php";
+include "transformer.php";
+
+$myFile = "https://s3-eu-west-1.amazonaws.com/coding-task-espejos/stores.xml";
+$validatorValues = [
+    "number" => "/^[0-9]{2,3}$/",
+    "name" => "/\p{L}/",
+    "siteid" => "/^[A-Z]{2}$/",
+    "address_line_1" => "/\p{L}/",
+    "address_line_2" => "/^(?!\s*$).+/",
+    "address_line_3" => "/\p{L}/",
+    "city" => "/\p{L}/",
+    "county" => "/^[a-z\d\-_\s]+$/i",
+    "country" => "/^[a-z\d\-_\s]+$/i",
+    "lat" => "/^[+\-]?[0-9]{1,3}\.[0-9]{3,}\z/",
+    "lon" => "/^[+\-]?[0-9]{1,3}\.[0-9]{3,}\z/",
+    "phone_number" => "/^[0-9 ]+$/",
+    // "phone_number1" => "/^[0-9]{4} [0-9]{3} [0-9]{3,4}$/",
+    "cfs_flag" => "/^(?:Y|N|y|n)$/"
 ];
 
-if ($number_of_params === 3){
-    $option = $argv[1];
-    $value = $argv[2];
-    if($option === "--check-file"){
-        checkIfFileExists($value);
-    }if($option === "--parse"){
-        parse($value);
-    }
-    else if($option === "--generate-report"){
-        runReport($value);
-    }else if($option === "--write-toDb"){
-        print_r($value);
-    }else if($option === "--help"){
-        print_r($value);
-    }else{
-        print_r("options available are:");
-    }
-}
-else{
-    showHelp($options);
-}
+$myParser = new XmlParser;
+$myParser->setFieldsRequired(array_keys($validatorValues));
+$stores = $myParser->parseData($myFile);
 
-function runReport($file){
-    checkIfFileExists($file);
-    print_r("parsing..");
-    
-}
+$myValidator = new validator;
+$myValidator->setValidators($validatorValues);
+$myValidator->validateData($stores);
 
-function checkIfFileExists($file){
-    $xml_file=simplexml_load_file($file) or die("Error: Cannot not get source file.\n");
-    print_r("File exists.\n");
-}
+$myTransformer = new transformer;
+$myTransformer->setSource($myValidator->getDestinationFile());
+$myTransformer->setTransformers(['cfs_flag' => 'boolean']);
+$myTransformer->transformData();
 
-function showHelp($options){
-    print_r("OPTIONS AVAILABLE:\n\n");
-    foreach($options as $option => $value){
-        print_r("option: ".$option."\t".$value."\n");
-    }
-}
+$servername = "192.168.10.10";
+$username = "homestead";
+$password = "secret";
+$dbname = "nn4m";
 
-?>
+$myloader = new loader;
+$myloader->setConnectionData($servername, $dbname, $username, $password);
+$myloader->setDataFile($myTransformer->getTransformedFile());
+// $myloader->setDataFile($myValidator->getDestinationFile());
+$myloader->loadToDB();
+
+
+
+
 
 
 
