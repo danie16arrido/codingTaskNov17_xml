@@ -2,20 +2,20 @@
 class validator{
     private $validators;
     private $logger_file;
-    private $destination_file;
+    private $payload;
 
-    public function validator(){
-        $this->setLoggerFile("err.json");
-        $this->setDestinationFile("todb.json");
-    }
+    // public function validator(){
+    //     $this->setLoggerFile("err.json");
+    //     $this->setDestinationFile("todb.json");
+    // }
 
     public function setDestinationFile($file){
-        $this->destination_file = $file;
+        $this->payload = $file;
         return $this;
     }
 
     public function getDestinationFile(){
-        return $this->destination_file;
+        return $this->payload;
     }
 
     public function setLoggerFile($file){
@@ -73,8 +73,9 @@ class validator{
             }
             array_push($toDb, $tmp);
         }
-        $this->logDataTo("logger", $error_logger);
-        $this->logDataTo("todb", $toDb);
+        // $this->logDataTo("logger", $error_logger);
+        // $this->logDataTo("todb", $toDb);
+        return $toDb;
     }
 
     private function logDataTo($option, $data){
@@ -85,8 +86,8 @@ class validator{
                 file_put_contents($this->logger_file, $jsonData);
                 break;
             case "todb":
-                $this->setDestinationFile($this->addTimestampToFile($this->destination_file));
-                file_put_contents($this->destination_file, $jsonData);
+                $this->setDestinationFile($this->addTimestampToFile($this->payload));
+                file_put_contents($this->payload, $jsonData);
                 break;    
             default:
                 echo "not a valid selection";

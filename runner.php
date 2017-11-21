@@ -4,7 +4,7 @@ include "validator.php";
 include "loader.php";
 include "transformer.php";
 
-$myFile = "https://s3-eu-west-1.amazonaws.com/coding-task-espejos/stores.xml";
+$myFile = "stores.xml";
 $validatorValues = [
     "number" => "/^[0-9]{2,3}$/",
     "name" => "/\p{L}/",
@@ -24,16 +24,19 @@ $validatorValues = [
 
 $myParser = new XmlParser;
 $myParser->setFieldsRequired(array_keys($validatorValues));
-$stores = $myParser->parseData($myFile);
+$stores_parsed = $myParser->parseData($myFile);
+
 
 $myValidator = new validator;
 $myValidator->setValidators($validatorValues);
-$myValidator->validateData($stores);
+$stores_validated = $myValidator->validateData($stores_parsed);
+// print_r($stores_validated);
 
 $myTransformer = new transformer;
-$myTransformer->setSource($myValidator->getDestinationFile());
+$myTransformer->setSource($stores_validated);
 $myTransformer->setTransformers(['cfs_flag' => 'boolean']);
-$myTransformer->transformData();
+$stores_transformed = $myTransformer->transformData();
+// print_r($stores_transformed);
 
 $servername = "192.168.10.10";
 $username = "homestead";
@@ -42,8 +45,7 @@ $dbname = "nn4m";
 
 $myloader = new loader;
 $myloader->setConnectionData($servername, $dbname, $username, $password);
-$myloader->setDataFile($myTransformer->getTransformedFile());
-// $myloader->setDataFile($myValidator->getDestinationFile());
+$myloader->setSource($stores_transformed);
 $myloader->loadToDB();
 
 

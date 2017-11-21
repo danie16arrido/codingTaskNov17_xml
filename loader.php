@@ -5,7 +5,7 @@ class loader{
     private $db_name;
     private $username;
     private $password;
-    private $filename;
+    private $source;
 
     public function setConnectionData($server, $db, $user, $pass){
         $this->server_name = $server;
@@ -14,8 +14,8 @@ class loader{
         $this->password = $pass;
         // return $this;
     }
-    public function setDataFile($file){
-        $this->filename = $file;
+    public function setSource($file){
+        $this->source = $file;
         // return $this;
     }
 
@@ -30,7 +30,8 @@ class loader{
 
     public function loadToDb(){
         $conn = $this->connectToDb();
-        $stores = $this->decodeSourceFile();
+        // $stores = $this->decodeSourceFile();
+        $stores = $this->source;
         $this->preprocesQuery($stores, $conn);
         mysqli_close($conn);
     }
@@ -86,13 +87,14 @@ class loader{
     }
 
     private function decodeSourceFile(){
-        $decoded_data = json_decode(file_get_contents($this->filename), true);
+        $decoded_data = json_decode(file_get_contents($this->source), true);
         return $decoded_data;
     }
 
     private function runQuery($sql, $conn, $fetch = false)
     {
         if ($result = mysqli_query($conn, $sql)) {
+            // echo 'The ID is: ' . $mysqli->insert_id;
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn) . "\n";
         }

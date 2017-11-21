@@ -3,15 +3,16 @@
 class transformer{
     private $source_file;
     private $transformers;
-    private $destination_file;
+    private $payload;
     
     public function setSource($file){
         $this->source_file = $file;
-        $this->destination_file = "tf_".$file;
+        // $this->source_file = $file;
+        // $this->payload = "tf_".$file;
     }
 
     public function getTransformedFile(){
-        return $this->destination_file;
+        return $this->payload;
     }
 
     public function setTransformers($transformers){
@@ -19,7 +20,8 @@ class transformer{
     }
 
     public function transformData(){
-        $stores = $this->decodeFile($this->source_file);
+        // $stores = $this->decodeFile($this->source_file);
+        $stores = $this->source_file;
         $result = [];
         foreach($stores as $store){
             foreach($this->transformers as $field => $transformer){
@@ -29,14 +31,15 @@ class transformer{
             }
             array_push($result, $store);
         }
-        $this->saveToJsonFile($result);
+        // $this->saveToJsonFile($result);
+        return $result;
         
     }
 
     private function saveToJsonfile($data){
         $jsonData = json_encode($data, JSON_PRETTY_PRINT);
-        file_put_contents($this->destination_file, $jsonData);
-        echo "transformed data located at: ".$this->destination_file."\n.";
+        file_put_contents($this->payload, $jsonData);
+        echo "transformed data located at: ".$this->payload."\n.";
     }
 
     private function decodeFile()
